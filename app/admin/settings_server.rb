@@ -7,7 +7,7 @@ ActiveAdmin.register SettingsServer do
   form do |f|
     f.inputs "Values" do
       f.input :name
-      f.input :server_type, :as => :select, :collection => %w( cloudconnect infra bash )
+      f.input :server_type, :as => :select2, :collection => %w( cloudconnect infra bash )
       f.input :server_url
       f.input :webdav_url
       f.input :default_account

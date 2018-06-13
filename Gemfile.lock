@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/NechiK/activeadmin-select2.git
+  revision: f1a10a6c0cda6ba393ab600d019d12337d310815
+  specs:
+    activeadmin-select2 (0.1.8)
+      activeadmin
+      jquery-rails
+      select2-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -126,7 +135,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    libv8 (3.16.14.19-x86_64-darwin-16)
+    libv8 (3.16.14.19)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -229,6 +238,7 @@ DEPENDENCIES
   active_admin_role
   active_admin_theme
   activeadmin
+  activeadmin-select2!
   activerecord-postgresql-adapter
   acts-as-taggable-on
   better_errors

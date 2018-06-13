@@ -73,7 +73,7 @@ ActiveAdmin.register Contract do
       f.input :contract_type, :as => :select, :collection => %w( direct poweredby N/A )
     end
     f.inputs 'Customer' do
-      f.input :customer, :as => :select, :collection => Customer.all.order(:name)
+      f.input :customer, :as => :select2, :collection => Customer.all.order(:name)
     end
     f.inputs 'SLA' do
       f.input :sla_enabled

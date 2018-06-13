@@ -13,6 +13,7 @@
 @import "wigu/active_admin_theme";
 @import "just_datetime_picker/base";
 @import "custom.css.scss";
+@import "active_admin/select2/base";
 //= require select2
 
 body.active_admin {
@@ -21,7 +22,9 @@ body.active_admin {
     display: none;
   }
 }
-
+h3 {
+  margin: 0;
+}
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:

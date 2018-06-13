@@ -49,7 +49,7 @@ ActiveAdmin.register Schedule do
       f.input :graph_name
       f.input :mode
       f.input :main
-      f.input :settings_server, :include_blank => false
+      f.input :settings_server, :as => :select2, :include_blank => false
       f.input :cron
       f.input :max_number_of_errors
       if (params["project_pid"].nil?)

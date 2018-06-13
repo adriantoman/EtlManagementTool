@@ -1,7 +1,7 @@
 ActiveAdmin.register AdminUser do
   role_changeable
   menu :priority => 7
-  permit_params :email, :password, :password_confirmation, :remember_me
+  permit_params :email, :password, :password_confirmation, :remember_me, :role
   filter :email
   filter :current_sign_in_at
   filter :sign_in_count
@@ -21,8 +21,8 @@ ActiveAdmin.register AdminUser do
     f.inputs "Admin Details" do       
       f.input :email                  
       f.input :password               
-      f.input :password_confirmation  
-    end                               
+      f.input :password_confirmation
+    end
     f.actions                         
   end                                 
 end

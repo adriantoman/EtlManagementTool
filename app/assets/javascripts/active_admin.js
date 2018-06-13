@@ -3,6 +3,7 @@
 //= require rails.validations.formtastic
 //= require rails.validations.formtastic.new
 //= require select2
+//= require active_admin/select2
 
 $(document).ready(function() {
     $('.tagselect').each(function() {

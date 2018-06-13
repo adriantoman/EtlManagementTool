@@ -41,11 +41,11 @@ ActiveAdmin.register Project do
         f.input :project_pid
       end
       f.input :name
-      f.input :status, :as => :select, :collection => ["Live", "Development", "Suspended"]
+      f.input :status, :as => :select2, :collection => ["Live", "Development", "Suspended"]
       f.input :ms_person
     end
     f.inputs 'Contact' do
-      f.input :contract_id, :as => :select, :collection => Contract.all.order(:name)
+      f.input :contract_id, :as => :select2, :collection => Contract.all.order(:name)
     end
     f.actions
 
@@ -65,6 +65,11 @@ ActiveAdmin.register Project do
             end
           end
 
+        end
+        panel ("Contract") do
+          attributes_table_for project do
+            row :contract
+          end
         end
         panel ("Contact") do
           attributes_table_for project do
