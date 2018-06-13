@@ -20,6 +20,7 @@ gem 'devise'
 gem 'activerecord-postgresql-adapter'
 gem 'jquery-rails'
 gem 'activeadmin'
+gem 'active_admin_role'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'just-datetime-picker'

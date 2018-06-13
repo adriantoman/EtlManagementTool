@@ -1,4 +1,5 @@
 class AdminUser < ActiveRecord::Base
+  role_based_authorizable
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
