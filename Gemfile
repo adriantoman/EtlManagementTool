@@ -16,11 +16,9 @@ gem 'select2-rails'
 gem 'activeadmin-select2', github: 'NechiK/activeadmin-select2'
 gem 'active_admin_theme'
 
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier'
-end
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
 
 group :development do
   gem 'pry'
